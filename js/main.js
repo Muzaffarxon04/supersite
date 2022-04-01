@@ -3,8 +3,6 @@ let searchIcon = document.querySelector(".search-icon")
 let Item = document.querySelectorAll(".sidebar__list")
 
 Item.forEach(e => {
-    console.log(e);
-
 e.addEventListener("click", (u) => {
     w3_close()
     })
@@ -13,7 +11,6 @@ e.addEventListener("click", (u) => {
 searchInput.addEventListener("keyup", (e) => {
    if (e.target.value) {
     searchIcon.style.display = "none";
-    console.log(e.code);
    }else{
     searchIcon.style.display = "block";
 

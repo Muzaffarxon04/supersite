@@ -19,12 +19,19 @@ letter-spacing: 0em;
 }
 
 .intro__subtitle{
+    font-family: "Jeko-Light", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
 width: 583px;
-text-align-last: left;
+text-align: left;
 
 }
 
 .swipe-btn{
+    font-family: "Jeko-Bold", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
     font-weight: 700;
     width: 10px;
     margin: 0 auto;

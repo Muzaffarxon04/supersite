@@ -19,7 +19,7 @@ line-height: 86px;
 }
 
 .servises__card{
-    height: 401px;
+    height: 400px;
 width: 370px;
 border-radius: 10px 10px 10px 10px;
 box-shadow: 0px 4px 20px 0px #00000029;
@@ -34,6 +34,7 @@ position: relative;
 &:nth-child(3n){
     margin-right: 0;
 }
+
 
 &::before{
     position: absolute;
@@ -51,6 +52,7 @@ position: relative;
 }
 
 img{
+    z-index: 200;
     margin-top: 10px;
     float: right;
     height: 134px;
@@ -68,6 +70,8 @@ margin-left: 20px;
 }
 
 .card-more{
+    font-family: "Jeko-Bold", sans-serif;
+    line-height: 25px;
     position: relative;
     color: #FF004F;
 font-size: 20px;
@@ -94,6 +98,7 @@ line-height: 83px;
 }
 
 .card__title{
+    font-family: "Jeko-Bold", sans-serif;
     margin-top: 15px;
 font-size: 28px;
 font-weight: 700;
@@ -104,6 +109,7 @@ text-transform: uppercase;
 }
 
 .card__text{
+    font-family: "Jeko-Light", sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
@@ -137,6 +143,8 @@ margin-top: 50px;
 }
 
 .form__subtitle{
+    font-family: "Jeko-Medium", sans-serif;
+font-weight: 400;
 font-size: 28px;
 line-height: 30px;
 text-align: center;
@@ -153,9 +161,14 @@ background-color: rgba(245, 245, 245, 1);
 margin-top: 10px;
 padding: 20px;
 border: none;
+
 }
 
 .servises-form__btn{
+    font-family: "Jeko-SemiBold", sans-serif;
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
     height: 60px;
 width: 296px;
 border-radius: 30px;

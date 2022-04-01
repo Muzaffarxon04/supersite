@@ -351,6 +351,46 @@ template {
   /* Legacy iOS */
 }
 
+@font-face {
+  font-family: "Jeko-Bold";
+  src: url("../fonts/Jeko-Bold.woff2") format("woff2"), url("../fonts/JekoBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jeko-Light";
+  src: url("../fonts/JekoLight.woff2") format("woff2"), url("../fonts/Jeko-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jeko-Medium";
+  src: url("../fonts/Jeko-Medium.woff2") format("woff2"), url("../fonts/Jeko-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jeko-SemiBold";
+  src: url("../fonts/Jeko-Semi-Bold.woff2") format("woff2"), url("../fonts/Jeko-Semi-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jeko-ExtraBold";
+  src: url("../fonts/JekoExtra-Bold.woff") format("woff2"), url("../fonts/JekoExtra-Bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 .container {
   width: 100%;
   max-width: 1180px;
@@ -392,6 +432,14 @@ header {
   font-size: 33px;
   font-weight: 700;
   line-height: 43px;
+}
+
+.sidebar__list span {
+  font-family: "Jeko-Light", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 35px;
+  color: #5A5A5A;
 }
 
 .sidebar__link {
@@ -475,6 +523,8 @@ header {
 }
 
 .phone-numer {
+  font-family: "Jeko-Medium", sans-serif;
+  line-height: 19px;
   text-decoration: none;
   color: #000000;
 }
@@ -503,7 +553,7 @@ header {
 }
 
 .servises__card {
-  height: 401px;
+  height: 400px;
   width: 370px;
   border-radius: 10px 10px 10px 10px;
   -webkit-box-shadow: 0px 4px 20px 0px #00000029;
@@ -537,6 +587,7 @@ header {
 }
 
 .servises__card img {
+  z-index: 200;
   margin-top: 10px;
   float: right;
   height: 134px;
@@ -558,6 +609,8 @@ header {
 }
 
 .card-more {
+  font-family: "Jeko-Bold", sans-serif;
+  line-height: 25px;
   position: relative;
   color: #FF004F;
   font-size: 20px;
@@ -585,6 +638,7 @@ header {
 }
 
 .card__title {
+  font-family: "Jeko-Bold", sans-serif;
   margin-top: 15px;
   font-size: 28px;
   font-weight: 700;
@@ -595,6 +649,7 @@ header {
 }
 
 .card__text {
+  font-family: "Jeko-Light", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
@@ -634,6 +689,8 @@ header {
 }
 
 .form__subtitle {
+  font-family: "Jeko-Medium", sans-serif;
+  font-weight: 400;
   font-size: 28px;
   line-height: 30px;
   text-align: center;
@@ -651,6 +708,10 @@ header {
 }
 
 .servises-form__btn {
+  font-family: "Jeko-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
   height: 60px;
   width: 296px;
   border-radius: 30px;
@@ -679,11 +740,18 @@ header {
 }
 
 .intro__subtitle {
+  font-family: "Jeko-Light", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
   width: 583px;
-  text-align-last: left;
+  text-align: left;
 }
 
 .swipe-btn {
+  font-family: "Jeko-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
   font-weight: 700;
   width: 10px;
   margin: 0 auto;
@@ -757,7 +825,9 @@ header {
 }
 
 .price__subtitle {
+  font-family: "Jeko-Medium", sans-serif;
   font-size: 24px;
+  font-weight: 400;
   line-height: 26px;
   text-align: center;
 }
@@ -788,14 +858,26 @@ header {
   margin: 0;
 }
 
-.price-card__title {
-  font-weight: 800;
-  font-size: 24px;
-  margin-bottom: 4px;
+.price-card:nth-child(2) h4 {
+  color: #FF004F;
 }
 
 .price-card__title {
+  font-family: "Jeko-ExtraBold", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 31px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.price-card__subtitle {
+  font-family: "Jeko-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
+  text-align: center;
+  color: #979797;
 }
 
 .price-card__btn {
@@ -816,6 +898,11 @@ header {
 }
 
 .select {
+  color: #2C2C2C;
+  font-family: "Jeko-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
   position: relative;
   left: 34%;
   height: 60px;
@@ -842,11 +929,13 @@ header {
 }
 
 .contact__subtitle {
+  font-family: "Jeko-Medium",sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .contact-form {
@@ -897,9 +986,12 @@ header {
 }
 
 .creatives__subtitle {
-  color: #5A5A5A;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Jeko-Medium", sans-serif;
   font-size: 28px;
+  font-weight: 400;
+  line-height: 31px;
+  color: #5A5A5A;
+  text-transform: uppercase;
 }
 
 .portfolio-cards {
@@ -981,9 +1073,13 @@ header {
 }
 
 .about__text {
+  font-family: "Jeko-Regular", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: justified;
   width: 570px;
   opacity: 70%;
-  line-height: 28px;
 }
 
 .about-text {
@@ -1120,9 +1216,12 @@ header {
 }
 
 .skill-card__title {
-  margin-bottom: 10px;
-  font-weight: 700;
+  font-family: "Jeko-Bold", sans-serif;
   font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .skill-card__text {
@@ -1131,6 +1230,9 @@ header {
   font-weight: 300;
   margin-bottom: 10px;
   line-height: 22px;
+  font-family: "Jeko-Light", sans-serif;
+  font-size: 18px;
+  text-align: center;
 }
 
 .top-navbar {
@@ -1152,16 +1254,21 @@ header {
 }
 
 .address {
+  font-family: "Jeko-Light", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 12px;
-  font-weight: 300;
   color: #909090;
-  font-style: normal;
 }
 
 .address .subtitle {
+  font-family: "Jeko-Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
   margin-left: 6px;
   line-height: 13px;
   color: #747474;
@@ -1233,11 +1340,17 @@ footer {
 }
 
 .footer-item {
+  font-family: "Jeko-Light", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 23px;
   color: #999999;
   width: 273px;
 }
 
 .footer-text {
+  font-family: "Jeko-Medium", sans-serif;
+  font-weight: 400;
   color: #ffffff;
   margin-top: 7px;
 }
@@ -1247,6 +1360,7 @@ footer {
 }
 
 *,
+*
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
@@ -1255,9 +1369,54 @@ footer {
   padding: 0;
 }
 
+*::-webkit-input-placeholder,
+*
+*::before::-webkit-input-placeholder,
+*::after::-webkit-input-placeholder {
+  font-family: "Jeko-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #ADADAD;
+}
+
+*:-ms-input-placeholder,
+*
+*::before:-ms-input-placeholder,
+*::after:-ms-input-placeholder {
+  font-family: "Jeko-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #ADADAD;
+}
+
+*::-ms-input-placeholder,
+*
+*::before::-ms-input-placeholder,
+*::after::-ms-input-placeholder {
+  font-family: "Jeko-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #ADADAD;
+}
+
+*::placeholder,
+*
+*::before::placeholder,
+*::after::placeholder {
+  font-family: "Jeko-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #ADADAD;
+}
+
 body {
   font-family: sans-serif;
   background-color: #ffffff;
+  color: #1D1D1F;
 }
 
 img {

@@ -10,8 +10,10 @@
 }
 
 .price__subtitle {
-  font-size: 24px;
-  line-height: 26px;
+  font-family: "Jeko-Medium", sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 26px;
   text-align: center;
 }
 .price-cards {
@@ -31,16 +33,30 @@
   &:last-child {
     margin: 0;
   }
+  &:nth-child(2){
+h4{
+  color: #FF004F;
+}
+  }
 }
 
-.price-card__title {
-  font-weight: 800;
+.price-card__title { 
+  font-family: "Jeko-ExtraBold", sans-serif;
   font-size: 24px;
+  font-weight: 800;
+  line-height: 31px;
+  text-align: center;
   margin-bottom: 4px;
 }
 
-.price-card__title {
-  line-height: 20px;
+.price-card__subtitle{
+font-family: "Jeko-Medium", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+color: #979797;
+
 }
 
 .price-card__btn {
@@ -60,6 +76,11 @@
 }
 
 .select{
+  color: #2C2C2C;
+  font-family: "Jeko-Medium", sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 26px;
     position: relative;
     left: 34%;
     height: 60px;

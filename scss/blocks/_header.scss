@@ -25,11 +25,22 @@ header {
   font-size: 33px;
   font-weight: 700;
   line-height: 43px;
+
+  span{
+    font-family: "Jeko-Light", sans-serif;
+font-size: 28px;
+font-weight: 300;
+line-height: 35px;
+color: #5A5A5A;
+
+  }
 }
 
 .sidebar__link {
   text-decoration: none;
   color: rgba(0, 20, 70, 1);
+
+
 }
 
 .sidebar-icon {
