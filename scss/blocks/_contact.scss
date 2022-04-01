@@ -55,7 +55,23 @@ margin-top: 10px;
 
 @include breakpoint-down(380px){
 .contact{
-    display: none;
+    width: 100%;
+padding: 0;
+}
+
+.contact-form{
+    margin: 0;
+width: 100%;
+flex-direction: column;
+}
+
+.contact-input{
+    width: 100%;
+}
+
+.contact-btn{
+    width: 190px;
+    
 }
 
 

@@ -2,7 +2,7 @@ footer {
   position: sticky;
 top: 100%;
   width: 100%;
-  height: 357px;
+  // height: 357px;
 background-color: #060600;
 color: #ffffff;
 }
@@ -34,4 +34,20 @@ font-weight: 400;
 
 .footer-icon{
 margin-right: 15px;
+}
+
+
+
+@include breakpoint-down(380px){
+  .footer-menu{
+    flex-direction: column;
+  }
+
+  .footer-item{
+    margin-top: 50px;
+  }
+
+  .footer-icon{
+    margin-bottom: 50px;
+  }
 }

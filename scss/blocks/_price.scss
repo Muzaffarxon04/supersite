@@ -1,6 +1,6 @@
-.price {
-  height: 900px;
-}
+// .price {
+//   height: 900px;
+// }
 .price__title {
   font-family: "Orbitron", sans-serif;
   font-size: 66px;
@@ -92,5 +92,38 @@ line-height: 26px;
 width: 370px;
 border-radius: 30px;
 background: #F9F7F7;
+
+}
+
+
+
+
+@include breakpoint-down(380px){
+ .price__title{
+  font-size: 33px;
+  line-height: 43px;
+  
+ }
+ 
+ .price__subtitle{
+  font-size: 20px;
+  line-height: 22px;
+ }
+  .price-card{
+    width: 100%;
+    margin:10px 0;
+  }
+
+
+.icons{
+  display: flex;
+  align-items: center;
+display: none;
+}
+
+.select{
+  width: 350px;
+left: 0;
+}
 
 }

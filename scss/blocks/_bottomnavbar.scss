@@ -54,3 +54,28 @@ background-color: transparent;
     color: #000000;
     
 }
+
+
+
+@include breakpoint-down(380px){
+    .bottom-navbar{
+        &::before{
+        width: 50%;
+        }
+    
+        &::after{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height:11px;
+       background-color: $color-light-white;
+     left: 0;
+    
+            }
+    }
+
+
+.menu-btn{
+    display: none;
+}
+}
