@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   list-style-type: none;
   width: 1122px;
-  height: 540px;
+  height: 580px;
   position: relative;
   background: rgba(243, 240, 240, 1);
   &::before {
@@ -41,7 +41,7 @@
 
 .skill-card {
   position: relative;
-  padding-top: 40px;
+  // padding-top: 40px;
   background-color: #ffffff;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -96,21 +96,17 @@
 
   &:nth-child(4) {
     &::after {
-      top: 80px;
       background: url("../../img/u_chart-down.svg");
     }
   }
   &:nth-child(5) {
     &::after {
-      top: 80px;
       background: url("../../img/u_game-structure.svg");
     }
   }
 
   &:nth-child(6) {
-   
     &::after {
-      top: 80px;
       background: url("../../img/u_shield-check.svg");
     }
   }
@@ -166,13 +162,14 @@ margin-right: 2px;
   &:nth-child(2n){
 margin-right: 0;
   }
-  &:nth-child(4), &:nth-child(5), &:nth-child(6){
-    &::before {
-      top: -40px;
-    }
+  &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6){
+
+&::before{
+  top: 25px;
+}    
 &::after{
   left: 85px;
-  top: 50px;
+  top: 70px;
 }
   }
 
@@ -184,15 +181,16 @@ margin-right: 0;
 .skill-card__title{
 font-size: 20px;
 line-height: 25px;
-
+text-align: left;
 }
 
 .skill-card__text{
 font-size: 12px;
 line-height: 14px;
 text-align: left;
-width: 100%;
+width: 95%;
 margin: 0;
+padding-bottom: 10px;
 }
 
 

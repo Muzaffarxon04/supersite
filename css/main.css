@@ -747,11 +747,15 @@ header {
 @media only screen and (max-width: 380px) {
   .servises__title {
     margin: 20px 0;
+    font-size: 33px;
   }
   .servises__form {
     left: 0;
     padding: 0 22px;
     width: 100%;
+  }
+  .servises__form .form__title {
+    font-size: 33px;
   }
   .servises-form__input {
     width: 100%;
@@ -761,6 +765,13 @@ header {
   }
   .servises__card {
     margin: 10px 0;
+  }
+  .servises__card .card__title {
+    font-size: 20px;
+  }
+  .servises__card .card__text {
+    font-size: 18px;
+    padding: 0;
   }
 }
 
@@ -820,12 +831,14 @@ header {
   }
   .intro__title {
     width: 350px;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 22px;
+    line-height: 24px;
     letter-spacing: 0em;
   }
   .intro__subtitle {
     width: 350px;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 
@@ -867,12 +880,20 @@ header {
           justify-content: center;
 }
 
+.carusel-item:nth-child(1), .carusel-item:nth-child(3) {
+  display: none;
+}
+
 @media only screen and (max-width: 380px) {
   .clients {
     margin: 60px 0;
   }
   .clients__title {
     font-size: 32px;
+  }
+  .carusel-item {
+    height: 80px;
+    width: 140px;
   }
 }
 
@@ -1064,6 +1085,9 @@ header {
 }
 
 @media only screen and (max-width: 380px) {
+  .contact__title {
+    font-size: 33px;
+  }
   .contact {
     width: 100%;
     padding: 0;
@@ -1256,6 +1280,9 @@ header {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .footer-icons {
+    margin-bottom: 50px;
+  }
 }
 
 .whatget__title {
@@ -1276,7 +1303,7 @@ header {
       flex-wrap: wrap;
   list-style-type: none;
   width: 1122px;
-  height: 540px;
+  height: 580px;
   position: relative;
   background: #f3f0f0;
 }
@@ -1305,7 +1332,6 @@ header {
 
 .skill-card {
   position: relative;
-  padding-top: 40px;
   background-color: #ffffff;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -1361,17 +1387,14 @@ header {
 }
 
 .skill-card:nth-child(4)::after {
-  top: 80px;
   background: url("../../img/u_chart-down.svg");
 }
 
 .skill-card:nth-child(5)::after {
-  top: 80px;
   background: url("../../img/u_game-structure.svg");
 }
 
 .skill-card:nth-child(6)::after {
-  top: 80px;
   background: url("../../img/u_shield-check.svg");
 }
 
@@ -1418,12 +1441,12 @@ header {
   .skill-card:nth-child(2n) {
     margin-right: 0;
   }
-  .skill-card:nth-child(4)::before, .skill-card:nth-child(5)::before, .skill-card:nth-child(6)::before {
-    top: -40px;
+  .skill-card:nth-child(3)::before, .skill-card:nth-child(4)::before, .skill-card:nth-child(5)::before, .skill-card:nth-child(6)::before {
+    top: 25px;
   }
-  .skill-card:nth-child(4)::after, .skill-card:nth-child(5)::after, .skill-card:nth-child(6)::after {
+  .skill-card:nth-child(3)::after, .skill-card:nth-child(4)::after, .skill-card:nth-child(5)::after, .skill-card:nth-child(6)::after {
     left: 85px;
-    top: 50px;
+    top: 70px;
   }
   .skill-card::after {
     left: 80px;
@@ -1432,13 +1455,15 @@ header {
   .skill-card__title {
     font-size: 20px;
     line-height: 25px;
+    text-align: left;
   }
   .skill-card__text {
     font-size: 12px;
     line-height: 14px;
     text-align: left;
-    width: 100%;
+    width: 95%;
     margin: 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -1496,6 +1521,10 @@ header {
   height: 32px;
 }
 
+.navbar__icon:nth-child(4) {
+  margin-right: 30px;
+}
+
 .search-input {
   background-color: transparent;
   position: absolute;
@@ -1541,14 +1570,17 @@ header {
     height: 34px;
     width: 34px;
     padding: 8px;
-    border-radius: 50%;
+    border-radius: 50px;
   }
   .search-wrapper img {
     left: 4px;
   }
+  .search-wrapper:hover {
+    width: 130px;
+  }
   .burger-button {
     display: block;
-    border-radius: 0%;
+    border-radius: 2px;
     margin: 0 0 0 5px;
   }
 }

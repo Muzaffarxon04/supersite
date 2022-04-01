@@ -54,6 +54,10 @@ margin-top: 10px;
 
 
 @include breakpoint-down(380px){
+    .contact__title{
+font-size: 33px;
+
+    }
 .contact{
     width: 100%;
 padding: 0;

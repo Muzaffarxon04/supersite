@@ -183,12 +183,17 @@ color: #ffffff;
 
 .servises__title{
     margin:20px 0;
+font-size: 33px;
+
 }    
 .servises__form{
 left: 0;
 padding:0 22px;
 width: 100%;
 
+.form__title{
+    font-size: 33px;
+}
 }
 .servises-form__input{
     width: 100%;
@@ -200,5 +205,15 @@ width: 100%;
 
 .servises__card{
   margin:10px 0;
+
+  .card__title{
+      font-size: 20px;
+  }
+  .card__text{
+      font-size: 18px;
+  padding: 0;
+    }
 }
+
+
 }

@@ -1,4 +1,5 @@
 let searchInput = document.querySelector(".search-input")
+let searchWrapper = document.querySelector(".search-wrapper")
 let searchIcon = document.querySelector(".search-icon")
 let Item = document.querySelectorAll(".sidebar__list")
 
@@ -16,6 +17,9 @@ searchInput.addEventListener("keyup", (e) => {
 
    }
 })
+
+
+
 
 
 function w3_open() {
