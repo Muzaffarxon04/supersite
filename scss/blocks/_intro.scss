@@ -14,7 +14,6 @@ font-family: "Orbitron", sans-serif;
 font-size: 32px;
 font-weight: 700;
 line-height: 45px;
-letter-spacing: 0em;
 
 }
 
@@ -24,7 +23,6 @@ letter-spacing: 0em;
     font-weight: 300;
     line-height: 30px;
 width: 583px;
-text-align: left;
 
 }
 
@@ -50,4 +48,23 @@ left: 47%;
         background-repeat: no-repeat;
         background-position: center;
     }
+}
+
+
+@include breakpoint-down(380px){
+    .text-wrapper{
+        margin:100px 0 100px 10px;
+    }
+    .intro__title{
+        width: 350px;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0em;
+
+    }
+     .intro__subtitle{
+    width: 350px;
+
+}
+
 }

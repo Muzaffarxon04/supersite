@@ -398,6 +398,12 @@ template {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 380px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
 header {
   width: 100%;
   height: 700px;
@@ -721,6 +727,12 @@ header {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 380px) {
+  .servises__form {
+    display: none;
+  }
+}
+
 .intro {
   margin: 0 auto;
 }
@@ -736,7 +748,6 @@ header {
   font-size: 32px;
   font-weight: 700;
   line-height: 45px;
-  letter-spacing: 0em;
 }
 
 .intro__subtitle {
@@ -745,7 +756,6 @@ header {
   font-weight: 300;
   line-height: 30px;
   width: 583px;
-  text-align: left;
 }
 
 .swipe-btn {
@@ -771,6 +781,21 @@ header {
   height: 30px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media only screen and (max-width: 380px) {
+  .text-wrapper {
+    margin: 100px 0 100px 10px;
+  }
+  .intro__title {
+    width: 350px;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0em;
+  }
+  .intro__subtitle {
+    width: 350px;
+  }
 }
 
 .clients {
@@ -836,6 +861,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -973,6 +1000,12 @@ header {
   border: none;
 }
 
+@media only screen and (max-width: 380px) {
+  .contact {
+    display: none;
+  }
+}
+
 .creatives {
   margin-top: 50px;
 }
@@ -1046,6 +1079,12 @@ header {
   top: 0;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+@media only screen and (max-width: 380px) {
+  .more-btn {
+    left: 50px;
+  }
 }
 
 .about {
@@ -1235,6 +1274,31 @@ header {
   text-align: center;
 }
 
+@media only screen and (max-width: 380px) {
+  .skills {
+    width: 100%;
+    height: 100%;
+  }
+  .skill-card {
+    width: 49%;
+    margin-right: 3px;
+  }
+  .skill-card:nth-child(3) {
+    margin-right: 3px;
+  }
+  .skill-card:nth-child(4)::before, .skill-card:nth-child(5)::before, .skill-card:nth-child(6)::before {
+    top: -40px;
+  }
+  .skill-card:nth-child(4)::after, .skill-card:nth-child(5)::after, .skill-card:nth-child(6)::after {
+    left: 85px;
+    top: 50px;
+  }
+  .skill-card::after {
+    left: 80px;
+    top: 50px;
+  }
+}
+
 .top-navbar {
   height: 60px;
   background-color: #ffffff;
@@ -1290,17 +1354,21 @@ header {
 }
 
 .search-input {
-  position: relative;
-  margin-left: 30px;
-  height: 34px;
-  width: 200px;
-  border-radius: 17px;
+  background-color: transparent;
+  position: absolute;
   padding: 12px;
-  border: 1px solid #F0F2F6;
-  border-radius: 17px;
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 
 .search-wrapper {
+  height: 34px;
+  position: relative;
+  width: 200px;
+  border-radius: 17px;
+  border: 1px solid #F0F2F6;
+  background: #F9F9F9;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1313,6 +1381,21 @@ header {
 .search-icon {
   position: absolute;
   right: 10px;
+}
+
+@media only screen and (max-width: 380px) {
+  .address {
+    font-size: 11px;
+  }
+  .address .subtitle {
+    width: 124px;
+  }
+  .search-wrapper {
+    height: 34px;
+    width: 34px;
+    padding: 8px;
+    border-radius: 50%;
+  }
 }
 
 footer {

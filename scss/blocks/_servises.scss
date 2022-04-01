@@ -177,3 +177,11 @@ border: none;
 margin-top: 25px;
 color: #ffffff;
 }
+
+
+
+@include breakpoint-down(380px){
+.servises__form{
+    display: none;
+}
+}
