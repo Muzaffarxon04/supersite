@@ -1,0 +1,46 @@
+.intro{
+
+margin: 0 auto;
+}
+.text-wrapper{
+    // padding-top: 222px;
+    margin:100px 0 100px 100px;
+}
+
+.intro__title{
+   color: $color-dark;
+width: 549px;
+font-family: "Orbitron", sans-serif;
+font-size: 32px;
+font-weight: 700;
+line-height: 45px;
+letter-spacing: 0em;
+
+}
+
+.intro__subtitle{
+width: 583px;
+text-align-last: left;
+
+}
+
+.swipe-btn{
+    font-weight: 700;
+    width: 10px;
+    margin: 0 auto;
+position: relative;
+text-decoration: none;
+color: #FF004F;
+left: 47%;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url("../../img/Arrow.svg");
+        top: 20px;
+        left: 40%;
+        width: 10px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

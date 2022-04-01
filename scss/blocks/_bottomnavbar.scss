@@ -1,0 +1,54 @@
+.bottom-navbar{
+    position: relative;
+    border-bottom: 1px solid #C1C7D7;
+    .container{
+    padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &::before{
+    content: "";
+    position: absolute;
+    background-color: $color-light-white;
+    border: 1px solid #C1C7D7;
+border-left:none;
+border-top:none;
+    width: 23%;
+     height:12px;
+left: 0px;
+bottom: -12px;
+transform: skew(-47deg);
+
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height:11px;
+   background-color: $color-light-white;
+ left: 0;
+
+        }
+}
+
+.logo-wrraper{
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn{
+    height: 38px;
+    width: 38px;
+    margin-right: 62px;
+border-radius: 50%;
+border: 1px solid #C1C7D7;
+background-color: transparent;
+}
+.phone-numer{
+    text-decoration: none;
+    color: #000000;
+    
+}

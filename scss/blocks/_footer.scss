@@ -1,0 +1,31 @@
+footer {
+  position: sticky;
+top: 100%;
+  width: 100%;
+  height: 357px;
+background-color: #060600;
+color: #ffffff;
+}
+
+.footer-menu{
+  padding: 60px 0 87px 0;
+  list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer-item{
+color: #999999;
+width: 273px;
+  
+}
+
+.footer-text{
+  color: #ffffff;
+  margin-top: 7px;
+}
+
+.footer-icon{
+margin-right: 15px;
+}
