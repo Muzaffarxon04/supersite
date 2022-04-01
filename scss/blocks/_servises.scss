@@ -21,18 +21,33 @@ line-height: 86px;
 .servises__card{
     height: 401px;
 width: 370px;
-border-radius: 10px 70px 10px 10px;
+border-radius: 10px 10px 10px 10px;
 box-shadow: 0px 4px 20px 0px #00000029;
 background-image: url("../../img/Subtract.svg");
-background-size:cover;
+background-size:contain;
 position: relative;
 background-repeat: no-repeat;
-// background-position: 0 -110px;
+position: relative;
 margin:0 30px 30px 0;
 background-color: #ffffff;
 position: relative;
 &:nth-child(3n){
     margin-right: 0;
+}
+
+&::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 80px 80px 0;
+        border-color: transparent #00000009 transparent transparent;
+    
 }
 
 img{
@@ -79,6 +94,7 @@ line-height: 83px;
 }
 
 .card__title{
+    margin-top: 15px;
 font-size: 28px;
 font-weight: 700;
 line-height: 35px;
