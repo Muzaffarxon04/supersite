@@ -40,6 +40,11 @@ width: 90%;
 
 
 @include breakpoint-down(380px){
+   .about__title{
+    font-size: 33px;
+
+    
+   }
     .about-text-wrapper{
         width: 100%;
         display: flex;
