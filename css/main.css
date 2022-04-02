@@ -1101,23 +1101,27 @@ header {
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-  position: relative;
-  left: 34%;
   height: 60px;
   outline: none;
   border: none;
   padding: 16px 26px;
-  margin: 20px auto 40px auto;
   width: 370px;
   border-radius: 30px;
   background: #f9f7f7;
 }
 
-@media only screen and (min-width: 380px) and (max-width: 1180px) {
-  .select {
-    right: 0;
-    left: 0;
-  }
+.select-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto 40px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
 }
 
 @media only screen and (max-width: 775px) {
@@ -1177,7 +1181,7 @@ header {
 }
 
 .contact {
-  height: 600px;
+  margin-bottom: 30px;
   padding: 100px;
 }
 
@@ -1200,7 +1204,7 @@ header {
 }
 
 .contact-form {
-  width: 970px;
+  width: 83%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1212,7 +1216,7 @@ header {
 .contact-input {
   padding: 30px;
   height: 60px;
-  width: 470px;
+  width: 48%;
   border-radius: 2px;
   background-color: #F5F5F5;
   border: none;
@@ -1234,6 +1238,21 @@ header {
   border: none;
 }
 
+@media only screen and (max-width: 1160px) {
+  .contact-form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-form .contact-input {
+    width: 90%;
+    margin-right: 0;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .contact__title {
     font-size: 33px;
@@ -1241,17 +1260,6 @@ header {
   .contact {
     width: 100%;
     padding: 0;
-  }
-  .contact-form {
-    margin: 0;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-input {
-    width: 100%;
   }
   .contact-btn {
     width: 190px;

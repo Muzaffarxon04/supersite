@@ -1,5 +1,6 @@
 .contact{
-    height: 600px;
+
+margin-bottom: 30px;
     padding: 100px;
 }
 .contact__title{
@@ -21,7 +22,7 @@ text-transform: uppercase;
 }
 
 .contact-form{
-    width: 970px;
+    width: 83%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +31,7 @@ text-transform: uppercase;
 .contact-input{
     padding: 30px;
     height: 60px;
-width: 470px;
+width: 48%;
 border-radius: 2px;
 background-color: #F5F5F5;
 border: none;
@@ -52,7 +53,17 @@ margin-top: 10px;
     border: none;
 }
 
+@include breakpoint-down(1160px){
+    .contact-form{
+        align-items: center;
+        justify-content: center;
 
+        .contact-input{
+            width: 90%;
+            margin-right: 0;
+        }
+    }
+}
 @include breakpoint-down(380px){
     .contact__title{
 font-size: 33px;
@@ -63,15 +74,15 @@ font-size: 33px;
 padding: 0;
 }
 
-.contact-form{
-    margin: 0;
-width: 100%;
-flex-direction: column;
-}
+// .contact-form{
+//     margin: 0;
+// width: 100%;
+// flex-direction: column;
+// }
 
-.contact-input{
-    width: 100%;
-}
+// .contact-input{
+//     width: 100%;
+// }
 
 .contact-btn{
     width: 190px;
