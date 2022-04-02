@@ -1390,7 +1390,8 @@ header {
 }
 
 .about {
-  padding-top: 100px;
+  margin-top: -150px;
+  padding-top: 250px;
   background-color: #1D1D1F;
 }
 
