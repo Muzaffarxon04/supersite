@@ -968,14 +968,18 @@ header {
   padding-bottom: 15px;
 }
 
-.carusel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
-.carusel-item {
+.slide {
   width: 270px;
   height: 138px;
   border-radius: 6px;
@@ -990,6 +994,59 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+}
+
+.slide img {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.slide img:hover {
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+.slide-track {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(270px * 4);
+  -webkit-animation: scroll 30s linear infinite;
+          animation: scroll 30s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.slide-track:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-270px * 4));
+            transform: translateX(calc(-270px * 4));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-270px * 4));
+            transform: translateX(calc(-270px * 4));
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -999,12 +1056,9 @@ header {
   .clients__title {
     font-size: 32px;
   }
-  .carusel-item {
+  .slide {
     height: 80px;
     width: 140px;
-  }
-  .carusel-item:nth-child(1), .carusel-item:nth-child(3) {
-    display: none;
   }
 }
 
