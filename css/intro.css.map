@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAA;EACN,gBAAgB,EAAE,GAAG;CACpB",
-    "sources": [
-        "../scss/blocks/intro.scss"
-    ],
-    "names": [],
-    "file": "intro.css"
-}

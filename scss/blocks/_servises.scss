@@ -1,254 +1,317 @@
-.servises{
+.servises {
     width: 100%;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
-.servises__title{
+.servises__title {
     font-family: "Orbitron", sans-serif;
-font-size: 66px;
-margin: 50px;
-font-weight: 700;
-line-height: 86px;
+    font-size: 66px;
+    margin: 50px;
+    font-weight: 700;
+    line-height: 86px;
     text-align: center;
     color: $color-dark;
 }
 
-.servises__card{
+.servises__card {
     height: 400px;
-width: 370px;
-// width: 31.6%;
-border-radius: 10px 10px 10px 10px;
-box-shadow: 0px 4px 20px 0px #00000029;
-background-image: url("../../img/Subtract.svg");
-background-size:contain;
-position: relative;
-background-repeat: no-repeat;
-position: relative;
-margin:0 30px 30px 0;
-background-color: #ffffff;
-position: relative;
-&:nth-child(3n){
-    margin-right: 0;
-}
+    width: 370px;
+    // width: 31.6%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 4px 20px 0px #00000029;
+    background-image: url("../../img/Subtract.svg");
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 30px 30px 0;
+    background-color: #ffffff;
+    position: relative;
 
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
 
-&::before{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
         content: "";
         display: inline-block;
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 80px 80px 0;
+        border-width: 0 90px 90px 0;
         border-color: transparent #00000009 transparent transparent;
-    
+    }
+
+    img {
+        z-index: 200;
+        margin-top: 10px;
+        float: right;
+        height: 134px;
+        width: 216px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 78%;
+        margin-left: 20px;
+    }
 }
 
-img{
-    z-index: 200;
-    margin-top: 10px;
-    float: right;
-    height: 134px;
-width: 216px;
-
-}
-
-span{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 78%;
-margin-left: 20px;
-}
-}
-
-.card-more{
+.card-more {
     font-family: "Jeko-Bold", sans-serif;
     line-height: 25px;
     position: relative;
-    color: #FF004F;
-font-size: 20px;
-text-decoration: none;
-font-weight: 700;
-&::before{
-    content: "";
-    background:url("../../img/Arrow.svg") no-repeat center;
-    width: 15px;
-    height: 30px;
-    position: absolute;
-    right: -30px;
-    top: 0;
-    transform: rotate(-90deg);
-}
+    color: #ff004f;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+
+    &::before {
+        content: "";
+        background: url("../../img/Arrow.svg") no-repeat center;
+        width: 15px;
+        height: 30px;
+        position: absolute;
+        right: -30px;
+        top: 0;
+        transform: rotate(-90deg);
+    }
 }
 
-.card__number{
+.card__number {
     font-family: "Orbitron", sans-serif;
-font-size: 64px;
-font-weight: 700;
-line-height: 83px;
-
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 83px;
 }
 
-.card__title{
+.card__title {
     font-family: "Jeko-Bold", sans-serif;
     margin-top: 15px;
-font-size: 28px;
-font-weight: 700;
-line-height: 35px;
-width: 330px;
-margin-left: 20px;
-text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    width: 330px;
+    margin-left: 20px;
+    text-transform: uppercase;
 }
 
-.card__text{
+.card__text {
     font-family: "Jeko-Light", sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     width: 330px;
-margin-left: 20px;
-    }
+    margin-left: 20px;
+}
 
-.servises__form{
+.servises__form {
     position: relative;
 
     height: 602px;
     top: 17px;
     left: 95px;
-width: 578px;
-border-radius: 6px;
-box-shadow: 0px 6px 30px 0px #0000001F;
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color: #ffffff;
+    width: 578px;
+    border-radius: 6px;
+    box-shadow: 0px 6px 30px 0px #0000001f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
 }
 
-.form__title{
+.form__title {
     font-family: "Orbitron", sans-serif;
-font-size: 66px;
-font-weight: 700;
-line-height: 86px;
-text-align: center;
-margin-top: 50px;
-
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 86px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.form__subtitle{
+.form__subtitle {
     font-family: "Jeko-Medium", sans-serif;
-font-weight: 400;
-font-size: 28px;
-line-height: 30px;
-text-align: center;
-margin:5px 0 10px 0;
-
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    margin: 5px 0 10px 0;
 }
 
-
-.servises-form__input{
+.servises-form__input {
     height: 60px;
-width: 470px;
-border-radius: 2px;
-background-color: rgba(245, 245, 245, 1);
-margin-top: 10px;
-padding: 20px;
-border: none;
-
+    width: 470px;
+    border-radius: 2px;
+    background-color: rgba(245, 245, 245, 1);
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
 }
 
-.servises-form__btn{
+.servises-form__btn {
     font-family: "Jeko-SemiBold", sans-serif;
-font-size: 24px;
-font-weight: 600;
-line-height: 29px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
     height: 60px;
-width: 296px;
-border-radius: 30px;
-background-color: #FF004F;
-border: none;
-margin-top: 25px;
-color: #ffffff;
+    width: 296px;
+    border-radius: 30px;
+    background-color: #ff004f;
+    border: none;
+    margin-top: 25px;
+    color: #ffffff;
 }
 
-@include breakpoint-down(900px){
-    .servises__card{
-        width: 46.6%;
+
+@include breakpoint-between(901px, 1180px) {
+    .wrapper{
+        justify-content: space-around;
     }
-    }
-    
-    @include breakpoint-down(550px){
-        .servises__form{
-            left: 0;
-        }
-        .servises__card{
-        margin: 0 auto 20px auto;
-            width: 92%;
-    
-            &:nth-child(3), &:nth-child(6){
-                margin:0 auto 30px auto;
-            }
-        }
-        }
-    
-
-@include breakpoint-down(380px){
-
-.servises__title{
-    margin:20px 0;
-font-size: 33px;
-
-}    
-.servises__form{
-left: 0;
-padding:0 22px;
-width: 100%;
-
-.form__title{
-    font-size: 33px;
-}
-}
-.servises-form__input{
-    width: 100%;
-}
-
-.servises-form__btn{
-    width: 190px;
-}
-
 .servises__card{
-  margin:10px 0;
-width: 100%;
-  .card__title{
-      font-size: 20px;
-      width: 90%;
-
-    }
+    width: 31.5%;
+    margin-right: 0;
+margin-bottom: 25px;
     .card__text{
-      width: 90%;
-      font-size: 18px;
-  padding: 0;
+        width: 80%;
     }
 }
 
-
+.servises__form{
+    left: 0;
+}
 }
 
+@include breakpoint-down(900px) {
+    .wrapper {
+        justify-content: center;
+    }
 
-@include breakpoint-down(265px){
-    .servises__form{
+    .servises__card {
+        width: 46.6%;
+
+        &:nth-child(3) {
+            margin: 0 30px 30px 0;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    .servises__form {
+        left: 0;
+    }
+}
+
+@include breakpoint-down(700px) {
+    .servises__card {
+        box-shadow: 3px 4px 10px 0px #00000029;
+        margin: 0 3% 3% 0;
+
+
+        &:nth-child(3) {
+            margin: 0 3% 3% 0;
+        }
+
+        &:hover {
+            box-shadow: 7px 7px 10px 0px #00000029;
+        }
+    }
+
+    .card__text{
+        width: 85%;
+    }
+}
+
+@include breakpoint-down(560px) {
+    .servises__title {
+        font-size: 55px;
+    }
+
+    .servises__form {
+        left: 0;
+    }
+
+    .servises-form__input {
+        width: 90%;
+    }
+
+    .servises__card {
+        margin: 0 auto 20px auto;
+        width: 92%;
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6) {
+            margin-left: 0;
+        }
+
+        
+    }
+}
+
+@include breakpoint-down(380px) {
+    .servises__title {
+        margin: 20px 0;
+        font-size: 33px;
+    }
+
+    .servises__form {
+        left: 0;
+        padding: 0 22px;
+        width: 100%;
+
+        .form__title {
+            font-size: 33px;
+        }
+    }
+
+    .servises-form__input {
+        width: 100%;
+    }
+
+    .servises-form__btn {
+        width: 190px;
+    }
+
+    .servises__card {
+        margin: 10px 0;
+        width: 100%;
+
+        .card__title {
+            font-size: 20px;
+            width: 90%;
+        }
+
+        .card__text {
+            width: 90%;
+            font-size: 18px;
+            padding: 0;
+        }
+    }
+}
+
+@include breakpoint-down(265px) {
+    .servises__form {
         padding: 0 10px;
     }
-.card-more{
-    &::before{
-        display: none;
+
+    .card-more {
+        &::before {
+            display: none;
+        }
     }
-}
 }
