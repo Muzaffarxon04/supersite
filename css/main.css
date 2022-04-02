@@ -1032,6 +1032,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1111,9 +1113,38 @@ header {
   background: #f9f7f7;
 }
 
-@media only screen and (max-width: 750px) {
-  .price {
-    background-color: red;
+@media only screen and (min-width: 380px) and (max-width: 1180px) {
+  .select {
+    right: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .price-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-card {
+    margin-bottom: 20px;
+    width: 45%;
+  }
+  .price-card:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .price-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-card {
+    margin-bottom: 20px;
+    width: 95%;
+    margin-right: 0;
   }
 }
 
