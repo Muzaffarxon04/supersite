@@ -407,7 +407,6 @@ template {
 
 header {
   width: 100%;
-  height: 700px;
   background-color: #FAF6F6;
 }
 
@@ -744,6 +743,25 @@ header {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 900px) {
+  .servises__card {
+    width: 46.6%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .servises__form {
+    left: 0;
+  }
+  .servises__card {
+    margin: 0 auto 20px auto;
+    width: 92%;
+  }
+  .servises__card:nth-child(3), .servises__card:nth-child(6) {
+    margin: 0 auto 30px auto;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .servises__title {
     margin: 20px 0;
@@ -765,13 +783,25 @@ header {
   }
   .servises__card {
     margin: 10px 0;
+    width: 100%;
   }
   .servises__card .card__title {
     font-size: 20px;
+    width: 90%;
   }
   .servises__card .card__text {
+    width: 90%;
     font-size: 18px;
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 265px) {
+  .servises__form {
+    padding: 0 10px;
+  }
+  .card-more::before {
+    display: none;
   }
 }
 
@@ -801,6 +831,7 @@ header {
 }
 
 .swipe-btn {
+  bottom: 50px;
   font-family: "Jeko-Bold", sans-serif;
   font-size: 20px;
   line-height: 25px;
@@ -830,13 +861,13 @@ header {
     margin: 100px 0 100px 10px;
   }
   .intro__title {
-    width: 350px;
+    width: 95%;
     font-size: 22px;
     line-height: 24px;
     letter-spacing: 0em;
   }
   .intro__subtitle {
-    width: 350px;
+    width: 100%;
     font-size: 16px;
     line-height: 19px;
   }
@@ -1020,7 +1051,7 @@ header {
     display: none;
   }
   .select {
-    width: 350px;
+    width: 100%;
     left: 0;
   }
 }
@@ -1140,6 +1171,7 @@ header {
 .portfolio-img {
   width: 100%;
   height: 100%;
+  border-radius: 6px;
 }
 
 .portfolio-card {
@@ -1182,6 +1214,16 @@ header {
           transform: rotate(-90deg);
 }
 
+@media only screen and (max-width: 580px) {
+  .portfolio-card {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .portfolio-card:nth-child(3), .portfolio-card:nth-child(6) {
+    margin: 10px auto;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .creatives__title {
     font-size: 33px;
@@ -1202,7 +1244,8 @@ header {
     background: #F5F5F5;
     border-radius: 4px;
     left: 0;
-    padding: 20px 150px;
+    border: 1px solid;
+    padding: 20px 42%;
   }
   .more-btn::before {
     display: none;
@@ -1253,6 +1296,25 @@ header {
   margin: 30px 50px 0 50px;
   position: relative;
   bottom: -4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 550px) {
+  .about-text-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-text-wrapper .about__text {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .about__img {
+    width: 90%;
+    margin: 25px auto auto 5%;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1276,8 +1338,6 @@ header {
   .about__img {
     width: 100%;
     margin-left: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .footer-icons {
     margin-bottom: 50px;
@@ -1466,6 +1526,27 @@ header {
   }
 }
 
+@media only screen and (max-width: 350px) {
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills .skill-card {
+    width: 99%;
+  }
+  .skills .skill-card:nth-child(odd) {
+    margin-right: 0;
+  }
+  .skills .skill-card::after {
+    left: 47%;
+  }
+}
+
 .top-navbar {
   height: 60px;
   background-color: #ffffff;
@@ -1503,7 +1584,16 @@ header {
   margin-left: 6px;
   line-height: 13px;
   color: #747474;
-  width: 160px;
+  width: 50%;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .icon-wrapper {
@@ -1584,6 +1674,18 @@ header {
   }
 }
 
+@media only screen and (max-width: 330px) {
+  .icons {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .icons {
+    display: none;
+  }
+}
+
 footer {
   position: -webkit-sticky;
   position: sticky;
@@ -1636,9 +1738,18 @@ footer {
   }
   .footer-item {
     margin-top: 50px;
+    width: 90%;
   }
   .footer-item img {
     margin-bottom: 50px;
+  }
+  .footer-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

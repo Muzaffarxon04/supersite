@@ -20,6 +20,7 @@ line-height: 86px;
 .servises__card{
     height: 400px;
 width: 370px;
+// width: 31.6%;
 border-radius: 10px 10px 10px 10px;
 box-shadow: 0px 4px 20px 0px #00000029;
 background-image: url("../../img/Subtract.svg");
@@ -177,7 +178,26 @@ margin-top: 25px;
 color: #ffffff;
 }
 
-
+@include breakpoint-down(900px){
+    .servises__card{
+        width: 46.6%;
+    }
+    }
+    
+    @include breakpoint-down(550px){
+        .servises__form{
+            left: 0;
+        }
+        .servises__card{
+        margin: 0 auto 20px auto;
+            width: 92%;
+    
+            &:nth-child(3), &:nth-child(6){
+                margin:0 auto 30px auto;
+            }
+        }
+        }
+    
 
 @include breakpoint-down(380px){
 
@@ -205,15 +225,30 @@ width: 100%;
 
 .servises__card{
   margin:10px 0;
-
+width: 100%;
   .card__title{
       font-size: 20px;
-  }
-  .card__text{
+      width: 90%;
+
+    }
+    .card__text{
+      width: 90%;
       font-size: 18px;
   padding: 0;
     }
 }
 
 
+}
+
+
+@include breakpoint-down(265px){
+    .servises__form{
+        padding: 0 10px;
+    }
+.card-more{
+    &::before{
+        display: none;
+    }
+}
 }

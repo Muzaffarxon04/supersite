@@ -45,10 +45,14 @@ margin-right: 15px;
 
   .footer-item{
     margin-top: 50px;
+  width: 90%;
     img{
       margin-bottom: 50px;
     }
   }
-
- 
+ .footer-icons{
+  //  align-items: center;
+   display: flex;
+   justify-content: center;
+ }
 }

@@ -26,10 +26,13 @@ line-height: 14px;
         margin-left: 6px;
        line-height: 13px; 
        color: #747474;
-       width: 160px;
+       width: 50%;
     }
 }
-
+.icons{
+    display: flex;
+    align-items: center;
+}
 .icon-wrapper{
     display: flex;
     align-items: center;
@@ -104,6 +107,23 @@ line-height: 14px;
     display: block;
     border-radius: 2px;
     margin: 0 0 0 5px;
+}
+
+}
+
+
+
+@include breakpoint-down(330px){
+    .icons{
+        display: none;
+    }
+    
+    }
+    
+
+@include breakpoint-down(330px){
+.icons{
+    display: none;
 }
 
 }
