@@ -44,12 +44,26 @@ left: 47%;
         background-image: url("../../img/Arrow.svg");
         top: 20px;
         left: 40%;
-        width: 10px;
+        width: 15px;
         height: 30px;
         background-repeat: no-repeat;
         background-position: center;
+        animation: swipe .6s linear infinite;
+    }
+
+
+   
+}
+
+@keyframes swipe {
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(17px);
     }
 }
+
 
 @include breakpoint-between(551px, 750px){
 .text-wrapper{
